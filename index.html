@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoroMap — La carte de votre amour</title>
+  <meta name="description" content="DoroMap est l'application intime pour les couples. Épinglez vos lieux partagés, explorez vos désirs avec la roue du désir et célébrez chaque étape de votre relation.">
+  <meta name="theme-color" content="#0D0812">
+  <meta property="og:title" content="DoroMap — La carte de votre amour">
+  <meta property="og:description" content="Épinglez vos moments, explorez vos désirs, célébrez votre relation.">
+  <meta property="og:type" content="website">
+  <!-- og:image: replace with a 1200×630 screenshot of the app -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <header>
+    <nav class="nav" aria-label="Navigation principale">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo" aria-label="DoroMap — Accueil">
+          <img src="assets/logo.svg" alt="DoroMap" width="180" height="39">
+        </a>
+        <!-- Replace # with your Google Play Store URL -->
+        <a href="#" class="nav__cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+            <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/>
+          </svg>
+          Télécharger
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ─── -->
+    <section class="hero" aria-label="Présentation">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content">
+        <div class="hero__eyebrow" aria-hidden="true">
+          <span class="hero__eyebrow-dot"></span>
+          Application pour couples · Android
+        </div>
+        <h1 class="hero__title">
+          Votre histoire,<br>
+          mappée avec <em>amour</em>.
+        </h1>
+        <p class="hero__sub">
+          DoroMap capture vos lieux partagés, pimente votre intimité et célèbre chaque moment de votre relation — avec la douceur d'une carte et la chaleur d'un souvenir.
+        </p>
+        <div class="hero__actions">
+          <!-- Replace # with your Google Play Store URL -->
+          <a href="#" class="btn-store" aria-label="Télécharger DoroMap sur Google Play">
+            <svg class="btn-store__icon" width="34" height="34" viewBox="0 0 512 512" aria-hidden="true">
+              <path d="M48.7 34.4C40.5 38.6 35 47.5 35 58.2v395.6c0 10.7 5.5 19.6 13.7 23.8l2.2 1.1 221.4-221.4v-5.2L50.9 30.5l-2.2 3.9z" fill="#4285F4"/>
+              <path d="M346.1 283.9l-73.8-73.8v-5.2l73.8-73.8 1.7 1 87.4 49.7c24.9 14.2 24.9 37.3 0 51.5L347.8 283l-1.7.9z" fill="#FBBC04"/>
+              <path d="M347.8 283l-75.5-75.5L50.9 429.7c8.2 8.7 21.8 9.8 37.2 1.1l259.7-147.8z" fill="#34A853"/>
+              <path d="M50.9 82.3C35.5 73.7 21.9 74.7 13.7 83.4l221.4 221.4L306.9 233 88.1 81.3c-14.1-8-26.1-8.7-37.2-1L50.9 82.3z" fill="#EA4335"/>
+            </svg>
+            <span class="btn-store__text">
+              <small>Disponible sur</small>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FEATURES ─── -->
+    <section class="section" aria-labelledby="features-title">
+      <div class="section__inner">
+        <div class="section-header">
+          <span class="section-label section-label--amethyst">Fonctionnalités</span>
+          <h2 class="section-title" id="features-title">Tout ce dont votre couple a besoin</h2>
+          <p class="section-sub">Quatre pilliers pour nourrir votre relation, où que vous soyez.</p>
+        </div>
+
+        <div class="features-grid">
+
+          <article class="feature-card fade-up fade-up-delay-1">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E8547B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Épinglez vos moments</h3>
+            <p class="feature-card__body">
+              Marquez vos lieux préférés sur une carte interactive et conservez chaque souvenir partagé — une table de restaurant, un coin de parc, une première fois.
+            </p>
+          </article>
+
+          <article class="feature-card fade-up fade-up-delay-2">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#9B7FE8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v4l3 3"/>
+                <path d="M8 12h.01M16 12h.01M12 8h.01M12 16h.01"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">La Roue du Désir</h3>
+            <p class="feature-card__body">
+              Deux roues pour explorer : l'Art des Étreintes avec 13 positions, et Préludes & Douceurs avec 13 jeux sensuels. Tournez et laissez le hasard décider.
+            </p>
+          </article>
+
+          <article class="feature-card fade-up fade-up-delay-3">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E8547B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Codes &amp; Connexions</h3>
+            <p class="feature-card__body">
+              Liez vos comptes avec un code couple unique pour partager votre carte. Invitez aussi vos amis proches avec des codes amis personnalisés.
+            </p>
+          </article>
+
+          <article class="feature-card fade-up fade-up-delay-4">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#9B7FE8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Jalons &amp; Récompenses</h3>
+            <p class="feature-card__body">
+              Débloquez des pseudonymes exclusifs, suivez vos statistiques de couple et célébrez chaque étape de votre relation avec des récompenses uniques.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── POUR QUI ─── -->
+    <section class="section section--alt" aria-labelledby="who-title">
+      <div class="section__inner" style="max-width: 720px;">
+        <div class="section-header">
+          <span class="section-label section-label--rose">Pour qui ?</span>
+          <h2 class="section-title" id="who-title">Fait pour les amoureux de toutes sortes</h2>
+        </div>
+
+        <ul class="who-list">
+          <li class="who-item fade-up">
+            <span class="who-item__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#E8547B" aria-hidden="true">
+                <path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/>
+              </svg>
+            </span>
+            <div class="who-item__text">
+              <strong>Les couples qui veulent ancrer leur histoire</strong>
+              Transformez vos souvenirs en lieux sur la carte et parcourez ensemble votre histoire commune.
+            </div>
+          </li>
+          <li class="who-item fade-up fade-up-delay-1">
+            <span class="who-item__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#9B7FE8" aria-hidden="true">
+                <path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/>
+              </svg>
+            </span>
+            <div class="who-item__text">
+              <strong>Les partenaires qui cherchent à se surprendre</strong>
+              La Roue du Désir introduit de la nouveauté et du jeu pour raviver la flamme au quotidien.
+            </div>
+          </li>
+          <li class="who-item fade-up fade-up-delay-2">
+            <span class="who-item__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#E8547B" aria-hidden="true">
+                <path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/>
+              </svg>
+            </span>
+            <div class="who-item__text">
+              <strong>Les amoureux qui célèbrent chaque instant</strong>
+              Jalons, pseudonymes à débloquer et statistiques pour garder la trace de votre belle aventure.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ─── CTA BANNER ─── -->
+    <section class="section" aria-label="Téléchargement">
+      <div class="section__inner">
+        <div class="cta-banner fade-up">
+          <h2 class="cta-banner__title">Prêts à écrire votre <em>histoire</em> ?</h2>
+          <p class="cta-banner__sub">DoroMap est gratuit. Disponible sur Android.</p>
+          <div class="hero__actions">
+            <!-- Replace # with your Google Play Store URL -->
+            <a href="#" class="btn-store" aria-label="Télécharger DoroMap sur Google Play">
+              <svg width="34" height="34" viewBox="0 0 512 512" aria-hidden="true">
+                <path d="M48.7 34.4C40.5 38.6 35 47.5 35 58.2v395.6c0 10.7 5.5 19.6 13.7 23.8l2.2 1.1 221.4-221.4v-5.2L50.9 30.5l-2.2 3.9z" fill="#4285F4"/>
+                <path d="M346.1 283.9l-73.8-73.8v-5.2l73.8-73.8 1.7 1 87.4 49.7c24.9 14.2 24.9 37.3 0 51.5L347.8 283l-1.7.9z" fill="#FBBC04"/>
+                <path d="M347.8 283l-75.5-75.5L50.9 429.7c8.2 8.7 21.8 9.8 37.2 1.1l259.7-147.8z" fill="#34A853"/>
+                <path d="M50.9 82.3C35.5 73.7 21.9 74.7 13.7 83.4l221.4 221.4L306.9 233 88.1 81.3c-14.1-8-26.1-8.7-37.2-1L50.9 82.3z" fill="#EA4335"/>
+              </svg>
+              <span class="btn-store__text">
+                <small>Disponible sur</small>
+                <strong>Google Play</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer__inner">
+      <a href="/" class="footer__logo" aria-label="DoroMap">
+        <img src="assets/logo.svg" alt="DoroMap" width="120" height="26">
+      </a>
+      <nav class="footer__links" aria-label="Liens légaux">
+        <a href="privacy.html">Politique de confidentialité</a>
+        <a href="delete-account.html">Supprimer mon compte</a>
+        <a href="mailto:sallotnolann@gmail.com">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__inner">
+      <p class="footer__copy">© 2024 DoroMap · Réservé aux personnes majeures (+18 ans)</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll-reveal animation with IntersectionObserver
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); }),
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
