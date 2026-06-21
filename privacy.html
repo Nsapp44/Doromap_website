@@ -46,12 +46,12 @@
         <p>
           L'application mobile <strong>DoroMap</strong> est éditée et exploitée par <strong>Nolann Sallot</strong>, développeur indépendant, dont vous pouvez contacter le responsable du traitement à l'adresse suivante :
         </p>
-        <a href="mailto:sallotnolann@gmail.com" class="legal-email-box">
+        <a href="mailto:nsappcontact@gmail.com" class="legal-email-box">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
           </svg>
-          sallotnolann@gmail.com
+          nsappcontact@gmail.com
         </a>
         <p style="margin-top: 16px;">
           DoroMap est destinée exclusivement aux personnes majeures (<strong>18 ans et plus</strong>). En utilisant l'application, vous confirmez avoir l'âge légal requis dans votre pays de résidence.
@@ -168,12 +168,12 @@
           <li><strong>Droit d'opposition (Art. 21)</strong> — vous opposer à un traitement fondé sur l'intérêt légitime</li>
         </ul>
         <p>Pour exercer ces droits, contactez-nous à :</p>
-        <a href="mailto:sallotnolann@gmail.com" class="legal-email-box">
+        <a href="mailto:nsappcontact@gmail.com" class="legal-email-box">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
           </svg>
-          sallotnolann@gmail.com
+          nsappcontact@gmail.com
         </a>
         <p style="margin-top: 14px;">Nous nous engageons à répondre dans un délai de <strong>30 jours</strong>.</p>
       </div>
@@ -217,7 +217,7 @@
       <nav class="footer__links" aria-label="Liens légaux">
         <a href="index.html">Accueil</a>
         <a href="delete-account.html">Supprimer mon compte</a>
-        <a href="mailto:sallotnolann@gmail.com">Contact</a>
+        <a href="mailto:nsappcontact@gmail.com">Contact</a>
       </nav>
     </div>
     <div class="footer__inner">
@@ -225,5 +225,21 @@
     </div>
   </footer>
 
+  <script>
+    document.querySelectorAll('a[href="mailto:nsappcontact@gmail.com"]').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+          e.preventDefault();
+          navigator.clipboard.writeText('nsappcontact@gmail.com').then(function() {
+            var tip = document.createElement('span');
+            tip.textContent = ' ✓ Copié';
+            tip.style.cssText = 'font-size:0.75em;margin-left:4px;color:#22c55e;';
+            el.parentNode.insertBefore(tip, el.nextSibling);
+            setTimeout(function() { tip.remove(); }, 2500);
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>

@@ -116,7 +116,7 @@
           <p>
             Si vous ne pouvez plus accéder à votre compte (appareil perdu, compte Google supprimé, etc.), envoyez-nous un e-mail de demande de suppression. Nous traitons les demandes dans un délai de <strong>30 jours</strong> conformément à l'article 17 du RGPD.
           </p>
-          <a href="mailto:sallotnolann@gmail.com?subject=Suppression%20de%20compte%20DoroMap&body=Bonjour%2C%0A%0AJe%20souhaite%20que%20mon%20compte%20DoroMap%20soit%20supprim%C3%A9%20ainsi%20que%20toutes%20mes%20donn%C3%A9es%20personnelles.%0A%0AEmail%20du%20compte%20%3A%20%5Bvotre%40email.com%5D%0A%0AMerci." class="legal-email-box">
+          <a href="mailto:nsappcontact@gmail.com?subject=Suppression%20de%20compte%20DoroMap&body=Bonjour%2C%0A%0AJe%20souhaite%20que%20mon%20compte%20DoroMap%20soit%20supprim%C3%A9%20ainsi%20que%20toutes%20mes%20donn%C3%A9es%20personnelles.%0A%0AEmail%20du%20compte%20%3A%20%5Bvotre%40email.com%5D%0A%0AMerci." class="legal-email-box">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
               <polyline points="22,6 12,13 2,6"/>
@@ -135,7 +135,7 @@
           La suppression de compte relève de votre <strong>droit à l'effacement</strong> prévu par l'article 17 du Règlement Général sur la Protection des Données (RGPD). Ce droit est absolu dans le cadre de DoroMap — vos données n'étant pas conservées à des fins légales ou de sécurité publique qui pourraient s'y opposer.
         </p>
         <p>
-          Pour toute question concernant vos données personnelles, consultez notre <a href="privacy.html">politique de confidentialité complète</a> ou contactez-nous à <a href="mailto:sallotnolann@gmail.com">sallotnolann@gmail.com</a>.
+          Pour toute question concernant vos données personnelles, consultez notre <a href="privacy.html">politique de confidentialité complète</a> ou contactez-nous à <a href="mailto:nsappcontact@gmail.com">nsappcontact@gmail.com</a>.
         </p>
         <p>
           Vous pouvez également introduire une réclamation auprès de la <strong>CNIL</strong> (<a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">www.cnil.fr</a>) si vous estimez que vos droits n'ont pas été respectés.
@@ -154,7 +154,7 @@
       <nav class="footer__links" aria-label="Liens légaux">
         <a href="index.html">Accueil</a>
         <a href="privacy.html">Politique de confidentialité</a>
-        <a href="mailto:sallotnolann@gmail.com">Contact</a>
+        <a href="mailto:nsappcontact@gmail.com">Contact</a>
       </nav>
     </div>
     <div class="footer__inner">
@@ -162,5 +162,21 @@
     </div>
   </footer>
 
+  <script>
+    document.querySelectorAll('a[href^="mailto:nsappcontact@gmail.com"]').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+          e.preventDefault();
+          navigator.clipboard.writeText('nsappcontact@gmail.com').then(function() {
+            var tip = document.createElement('span');
+            tip.textContent = ' ✓ Copié';
+            tip.style.cssText = 'font-size:0.75em;margin-left:4px;color:#22c55e;';
+            el.parentNode.insertBefore(tip, el.nextSibling);
+            setTimeout(function() { tip.remove(); }, 2500);
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
